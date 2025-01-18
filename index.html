@@ -5,55 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golf Club Blog</title>
     <link rel="stylesheet" href="styles.css">
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
+        /* Header Styles */
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-main {
-    padding: 20px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
 
-article {
-    margin: 20px 0;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
+        nav a:hover {
+            color: #ccc;
+        }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-}
-
-</style>
+        /* Responsive Navigation */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -63,46 +58,122 @@ footer {
                 <li><a href="#posts">Blog Posts</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#events">Events</a></li>
             </ul>
         </nav>
     </header>
 
+
 <main>
-        <section id="posts">
-            <h2>Latest Posts</h2>
-            <article>
-                <h3>Improving Your Swing</h3>
-                <p>Learn techniques to enhance your golf swing...</p>
-                <a href="#">Read more</a>
-            </article>
-            <article>
-                <h3>Upcoming Tournaments</h3>
-                <p>Join us for our next tournament on...</p>
-                <a href="#">Read more</a>
-            </article>
-            <article>
-                <h3>Golf Etiquette</h3>
-                <p>Understanding the importance of etiquette on the course...</p>
-                <a href="#">Read more</a>
-            </article>
-        </section>
+    <section id="posts">
+        <h2>Latest Posts</h2>
+        <article>
+            <h3>Improving Your Swing</h3>
+            <p>Learn techniques to enhance your golf swing...</p>
+            <a href="#">Read more</a>
+        </article>
+        <article>
+            <h3>Upcoming Tournaments</h3>
+            <p>Join us for our next tournament on...</p>
+            <a href="#">Read more</a>
+        </article>
+        <article>
+            <h3>Golf Etiquette</h3>
+            <p>Understanding the importance of etiquette on the course...</p>
+            <a href="#">Read more</a>
+        </article>
+    </section>
 
-<section id="about">
-            <h2>About Us</h2>
-            <p>We are a community of golf enthusiasts dedicated to sharing the love of the game...</p>
-        </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a community of golf enthusiasts dedicated to sharing the love of the game...</p>
+    </section>
 
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us via email at <a href="mailto:info@golfclub.com">info@golfclub.com</a>.</p>
+    </section>
 
-<section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions? Reach out to us via email at <a href="mailto:info@golfclub.com">info@golfclub.com</a>.</p>
-        </section>
-    </main>
+    <section id="membership">
+        <h2>Membership</h2>
+        <p>Join our community of golf enthusiasts and enjoy exclusive benefits...</p>
+        <button>Join Now</button>
+    </section>
+
+    <section id="events">
+        <h2>Events</h2>
+        <p>Stay up-to-date with our latest events and tournaments...</p>
+        <button>View Events</button>
+    </section>
+</main>
 
 
 <footer>
-        <p>&copy; 2025 Golf Club. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    <p>&copy; 2025 Golf Club. All rights reserved.</p>
+    <ul>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</footer>
+
+<style>
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+        main {
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        main {
+            padding: 10px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        main {
+            padding: 5px;
+        }
+    }
+</style>
+
+<!-- Award-Winning Functions -->
+<section id="awards">
+    <h2>Awards and Recognition</h2>
+    <p>We are proud to have received the following awards...</p>
+    <ul>
+        <li><a href="#">Best Golf Club in the Region</a></li>
+        <li><a href="#">Most Improved Golf Course</a></li>
+    </ul>
+</section>
+
+<!-- Thematic Areas -->
+<section id="thematic-areas">
+    <h2>Thematic Areas</h2>
+    <p>We focus on the following thematic areas...</p>
+    <ul>
+        <li><a href="#">Golf Development</a></li>
+        <li><a href="#">Community Engagement</a></li>
+        <li><a href="#">Environmental Sustainability</a></li>
+    </ul>
+</section>
+
+<!-- Member Login and Registration -->
+<section id="member-login">
+    <h2>Member Login</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <button>Login</button>
+    </form>
+    <p>Not a member? <a href="#">Register now</a></p>
+</section>
+
+
+
 </body>
 </html>
